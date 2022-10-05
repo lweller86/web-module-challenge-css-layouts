@@ -69,6 +69,9 @@ h1 {
     font-weight: 700;
     font-size: xx-large;
 }
+.padding{
+    padding:1rem;
+}
 h2 {
     font-weight: 700;
 }
@@ -78,7 +81,7 @@ header .navbar{
     max-width:100%;
     margin:0 auto;
     padding:0 30px;
-    height:100PX;
+    height:10rem;
 
 }
 header  .navbar{
@@ -90,7 +93,7 @@ header  .navbar{
 /*Main Body*/
 .first{
     width:100%;
-    height:20rem;
+    max-height:20rem;
     background-color: cadetblue;
 
 }
@@ -118,18 +121,17 @@ header  .navbar{
 body section.list{
     background-color:darkcyan;
     height: 50rem;
-    display:flex;
-    align-items: center;
+    width:auto;
+}   
+.myprojects{
+    text-align: center;
 }
-.myprojects h2{
-        display:flex;
-        justify-content: space-around;
-        align-items:center;
-}
+
+
+
 .list container {
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
     flex-flow: wrap;
     margin:3.0rem;
     
@@ -147,11 +149,83 @@ body section.list{
 
 footer{
     background-color:cadetblue; 
-    height:15rem;
+    height:auto;
+    width: 100%;
 }
 footer{
     display:flex;
     justify-content: space-around;
     align-items: flex-start;
+}
+@media screen and (max-width:1068px) {
+    body section.list{
+        height: 65rem;
+        width:auto;
+ 
+
+}
+
+@media screen and (max-width:830px) {
+    body section.list{
+        
+        height: 85rem;
+        width:auto;
+ 
+
+}
+@media screen and (max-width:650px) {
+    .first{
+        width:100%;
+        max-height:30rem;
+    
+    }
+ 
+
+}
+@media screen and (max-width:589px) {
+    body section.list{
+        
+        height: 160rem;
+        width:auto;
+ 
+
+}
+@media screen and (max-width:544px) {
+    .first{
+        width:100%;
+        max-height:150rem;
+    }
+    .navbar{
+        display: flex;
+        flex-flow: column;
+        max-height:100rem;
+    }
+    .about{
+        flex-flow: column;
+    }
+    footer{
+        display:flex;
+        flex-flow: column;
+        max-height: 30rem;
+        width: auto;
+    }
+
+ 
+
+}
+@media screen and (max-width:303px) {
+
+  .first img{
+    width: 10rem;
+    height:auto;
+   }
+   .list img{
+    width:12rem;
+    height:auto;
+   }
+   body section.list{
+        
+    height: 107rem;
+    width:auto;
 }
 
